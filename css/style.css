@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'aubergescriptbasiuploadedfile';
+	src: url('../fonts/auberge_script_basic_five-webfont.woff2') format('woff2'), url('../fonts/auberge_script_basic_five-webfont.woff') format('woff'), url('../fonts/auberge_script_basic_five-webfont.svg#aubergescriptbasiuploadedfile') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	/*background: #ffe;*/
+	/*background: red;*/
+	overflow: auto
+}
+
+.section {
+	/*height: 700px;*/
+}
+
+.container {
+	/*height: 700px;*/
+	/*height: 100%;*/
+	width: 100%;
+	/*background: pink;*/
+	overflow: hidden;
+	/*background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(./images/bg.jpg);*/
+}
+
+.hide {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+#myCanvas {
+	z-index: -1;
+	/*这个宽高是将真实的画布的宽高进行拉伸*/
+	width: 100%;
+	height: 100%;
+	/*background: pink;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#loveHeart {
+	/*background: #ffffaa;*/
+	width: 670px;
+	height: 625px;
+	margin: auto;
+	/*margin-top: 0%;*/
+	position: relative;
+}
+
+#garden {
+	/*background: #ffaaff;*/
+	width: 100%;
+	height: 100%
+}
+
+#words {
+	/*font-family: sans-serif ;*/
+	/*font-family: "sans-serif";*/
+	width: 500px;
+	color: #666;
+	/*background: #aaaaff;*/
+	position: absolute;
+	top: 195px;
+	left: 70px;
+}
+
+#messages {
+	/*background: #aaaaff;*/
+	display: none;
+	font-size: 24px;
+}
+
+#messages p {
+	font-family: sans-serif;
+}
+
+
+/*css height 0 和 dispaly none 有什么区别?： dispaly none是设置border也没有用，不生成*/
+
+#elapseClock {
+	/*background: #aaaaff;*/
+	font-family: 'aubergescriptbasiuploadedfile';
+	text-align: right;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+#elapseClock .digit {
+	font-family: "digit";
+	font-size: 36px
+}
+
+#loveu {
+	padding: 0px;
+	font-size: 42px;
+	margin-top: 40px;
+	margin-right: 110px;
+	margin-bottom: 0px;
+	text-align: right;
+	display: none;
+}
+
+#loveu p {
+	font-family: 'aubergescriptbasiuploadedfile';
+}
+
+#loveu .signature {
+	margin-top: 0px;
+	margin-right: 50px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+@media (max-width:700px) {
+	/*这里的100% 到底是相对于谁*/
+	html,
+	body,
+	.container,
+	#myCanvas {
+		width: 700px;
+	}
+}
+
+
+/*手机适配
+@media (max-width:500px) {	
+	html,
+	body,
+	.container,
+	#myCanvas {
+		width: 500px;
+	}
+	#loveHeart {		
+		width: 402px;
+		height: 375px;		
+	}
+	#garden {
+		width: 100%;
+		height: 100%;
+		
+	}
+	#words {
+		width: 300px;
+		top: 117px;
+		left: 42px;
+	}
+	#messages {
+		font-size: 15px;
+	}
+	
+	#elapseClock {
+		font-size: 24px;
+		margin-top: 6px;
+		margin-bottom: 6px
+	}
+	#elapseClock .digit {
+		font-size: 22px
+	}
+	#loveu {
+		padding: 0px;
+		font-size: 26px;
+		margin-top: 24px;
+		margin-right: 66px;
+		margin-bottom: 0px;	
+	}
+	
+	#loveu .signature {
+		margin-top: 0px;
+		margin-right: 30px;
+		font-size: 12px;
+	}
+}*/
+
+
+
